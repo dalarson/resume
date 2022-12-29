@@ -1,0 +1,169 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/david-larson-48179b15b/}{\Large David Larson}} & Email:  \href{mailto:larson.david46@gmail.com}{larson.david46@gmail.com}\\
+  \href{http://github.com/dalarson/}{github.com/dalarson} & Mobile : (301) 609-0012 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Worcester Polytechnic Institute}{Worcester, MA}
+      {Bachelor of Computer Science with Distinction;  GPA: 3.34}{May 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Nuance Communications}{Burlington, MA}
+      {Software Engineer}{Jan 2022 - present}
+      \resumeItemListStart
+        \resumeItem{Update and Deploy Application}
+          {Created application consisting of .yml pipeline and helper python script to conditionally update dependencies across multiple projects and deploy to QA environment.}
+      \resumeItemListEnd  
+  
+    \resumeSubheading
+      {Nuance Communications}{Burlington, MA}
+      {Associate Software Engineer}{Jun 2020 - Jan 2022}
+      \resumeItemListStart
+        \resumeItem{Node.js Web Application}
+          {Carried out work on Node web application front end. Created Vue components, worked on server}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Nuance Communications}{Burlington, MA}
+      {Software Engineering Intern}{May - Aug 2019}
+      \resumeItemListStart
+        \resumeItem{AWS EC2 Manager}
+          {Developed ASP.NET web application to interface with AWS EC2. Allows configuration and management of VMs running pre-configured SOAP UI tests for load testing on Azure servers.}
+        \resumeItem{Lift and Shift}
+          {Contributed to the shift of server side ASP.NET application to ES2015 client-side app. Proxy server kept track of updated features and delivered content.}
+      \resumeItemListEnd
+
+    
+          
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+  \resumeSubItem{Major Qualifying Project: GANs for Vehicle Trajectories}
+      {Using Generative Adversarial Networks (GANs) to analyze and predict traffic patterns. Training model with trajectory data to generate trajectory data on an overlaid grid, then attempting to enhance resolution of given data.}
+    \resumeSubItem{Gateway Traffic Classifier}
+      {Created Linux VM to act as network gateway between an Android VM and internet. Implemented decision tree model to classify the source application of packet traces in real time.}
+      \resumeSubItem{Game of Life}
+      {Implemented Conway's game of life as an exercise to learn the Rust systems programming language. Used sparse matrix data structure for implementation.}
+    \resumeSubItem{Distance Vector Routing Protocol}
+      {Implemented distance vector routing algorithm in C that maintains correct distance table with arbitrary node topology.}
+    \resumeSubItem{Alternating Bit Protocol}
+      {Implemented version of Reliable Data Transfer in C. Simulated alternating bit protocol on transport layer.}
+  \resumeSubHeadingListEnd
+  
+%--------Relevant Coursework-----------
+\section{Relevant Coursework}
+    \resumeSubHeadingListStart
+        Tools and Technology for Network Security, Advanced Computer Networks, Distributed Computer Systems, Intro to Artificial Intelligence, Data Analytics and Statistical Learning, Operating Systems, Foundations of Computer Science, Systems Programming Concepts, Algorithms, Accelerated Object Oriented Programming, Machine Organization and Assembly Language
+    \resumeSubHeadingListEnd
+
+        
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+    \item{
+     \textbf{Languages}{: Java, Python, C/C++, C\#, JavaScript, HTML/CSS, Rust, SQL, YAML }
+     }
+     \item{
+     \textbf{Software \& Tools}{: Linux, \LaTeX, Git, .NET, Node.js, Vue, ASP.NET, MVC, MVVM, AWS, Azure}
+    }
+    \item{
+     \textbf{Other}{: Agile, TDD/BDD}
+    }
+ \resumeSubHeadingListEnd
+
+%-----------Extra Curricular----------
+\section{Extra Curricular}
+    \resumeSubHeadingListStart
+        \item{WPI Varsity Baseball 2017-2020, Captain 2019-2020}
+        \item{Brother of Sigma Phi Epsilon fraternity}
+        \item{Event Coordinator of St. Baldrick's Rock the Bald event at WPI (2019)}
+        \item{Student Assistant for CS 4341 - Intro to Artificial Intelligence}
+    \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
