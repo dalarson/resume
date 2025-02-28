@@ -43,6 +43,13 @@
   }
 }
 
+% Custom commands
+\newcommand{\headlessResumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -87,27 +94,41 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Nuance Communications}{Burlington, MA (remote)}
-      {Software Engineer}{Jan 2022 - present}
+      {Microsoft}{Remote}
+      {Software Engineer}{Aug 2023 - present}
       \resumeItemListStart
-        \resumeItem{Nuance Command Center (NCC) v2}
-          {Rewrite of NCC vanilla JS app to React app. Leveraged FluentUI react components. Worked to meet UX design criteria \& accessibility requirements.}
-        \resumeItem{Update and Deploy Pipeline}
-          {Created application consisting of .yml pipeline and helper python script to conditionally update dependencies across multiple projects and deploy to QA environment. Leveraged Azure Devops APIs and executed git commands programatically.}
+      \headlessResumeItem
+        {Independently designed, implemented and deployed .net API service for configuration of embedded PowerBI reports in admin portal leveraging Azure CosmosDb. Contributed to development of bulk user import operation leveraging Azure Service Bus.}
+      \headlessResumeItem
+        {Worked on a team to create from scratch a responsive react.js admin portal interfacing Followed UX specifications and interfaced with 7 different API services and $\approx$100 endpoints.}
+      \headlessResumeItem
+        {Worked on, supported, and helped onboard client teams to backend system to interface legacy authorization schemes with Azure EntraID.}
+      \headlessResumeItem
+        {Spearheaded the migration of engineers to begin working on Msft ``1st party'' rewrite of Nuance admin portal and backend.}
+        \headlessResumeItem
+        {Assumed ownership of LogAnalyzer, a tool used for debugging production CIs after architect was let go due to reorganization. Carried out security-related upgrades and maintenance. Implemented new features to improve ease-of-use by DRIs.}
       \resumeItemListEnd  
   
     \resumeSubheading
-      {Nuance Communications}{Burlington, MA (remote)}
-      {Associate Software Engineer}{Jun 2020 - Jan 2022}
+      {Nuance}{Burlington, MA (remote)}
+      {Software Engineer}{Jun 2020 - Aug 2023}
       \resumeItemListStart
-        \resumeItem{Nuance Command Center (NCC)}
-          {Intended rewrite of legacy .NET app. Carried out work on javascript web application front end. Created Vue components from scratch, worked on Node.js backend. Communicated with multiple backend services.}
+        \headlessResumeItem
+          {Feature-complete total rewrite of legacy front end admin application in React.js. Implemented DevOps and security infrastructure. Integrated with various Azure services.}
+        \headlessResumeItem
+          {Helped to develop a cross-team front end component library and interactive documentation used by multiple adjacent client teams.}
+        \headlessResumeItem
+          {Implemented CI/CD, automation, testing and vulnerability scanning pipelines for repos of various stacks.}
+        \headlessResumeItem
+          {Contributed to development of comprehensive suite of functional tests for front end admin portal as well as back end API service.}
+        \headlessResumeItem
+          {Created pipeline for automatic dependency upgrades leveraging renovate tool for swath of repositories, resulting in fewer show-stopping vulnerabilities or CIs.}
       \resumeItemListEnd
       \resumeSubheading
       {Nuance Communications}{Burlington, MA}
       {Software Engineering Intern}{May - Aug 2019}
       \resumeItemListStart
-        \resumeItem{AWS EC2 Manager}
+        \headlessResumeItem
           {Developed ASP.NET web application to interface with AWS EC2. Allows configuration and management of VMs running pre-configured SOAP UI tests for load testing on Azure servers.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
@@ -118,28 +139,30 @@
   \resumeSubHeadingListStart
   \resumeSubItem{Major Qualifying Project: GANs for Vehicle Trajectories}
       {Using Generative Adversarial Networks (GANs) to analyze and predict traffic patterns. Training model with trajectory data to generate trajectory data on an overlaid grid, then attempting to enhance resolution of given data.}
-    \resumeSubItem{Gateway Traffic Classifier}
-      {Created Linux VM to act as network gateway between an Android VM and internet. Implemented decision tree model to classify the source application of packet traces in real time.}
-      \resumeSubItem{Game of Life}
-      {Implemented Conway's game of life as an exercise to learn the Rust systems programming language. Used sparse matrix data structure for implementation.}
-    \resumeSubItem{Distance Vector Routing Protocol}
-      {Implemented distance vector routing algorithm in C that maintains correct distance table with arbitrary node topology.}
-    \resumeSubItem{Alternating Bit Protocol}
-      {Implemented version of Reliable Data Transfer in C. Simulated alternating bit protocol on transport layer.}
+  \resumeSubItem{Rusty Rhino}
+      {Implemented full stack application for a small furniture restoration business. Includes React.js front end with CMS, CosmosDb, Java REST API, CI/CD for all components, and resources managed through IaC.}
+    % \resumeSubItem{Gateway Traffic Classifier}
+    %   {Created Linux VM to act as network gateway between an Android VM and internet. Implemented decision tree model to classify the source application of packet traces in real time.}
+    %   \resumeSubItem{Game of Life}
+    %   {Implemented Conway's game of life as an exercise to learn the Rust systems programming language. Used sparse matrix data structure for implementation.}
+    % \resumeSubItem{Distance Vector Routing Protocol}
+    %   {Implemented distance vector routing algorithm in C that maintains correct distance table with arbitrary node topology.}
+    % \resumeSubItem{Alternating Bit Protocol}
+    %   {Implemented version of Reliable Data Transfer in C. Simulated alternating bit protocol on transport layer.}
   \resumeSubHeadingListEnd
   
 %--------Relevant Coursework-----------
-\section{Relevant Coursework}
-  Tools and Technology for Network Security, Advanced Computer Networks, Distributed Computer Systems, Intro to Artificial Intelligence, Data Analytics and Statistical Learning, Operating Systems, Foundations of Computer Science, Systems Programming Concepts, Algorithms, Accelerated Object Oriented Programming, Machine Organization and Assembly Language
+% \section{Relevant Coursework}
+%   Tools and Technology for Network Security, Advanced Computer Networks, Distributed Computer Systems, Intro to Artificial Intelligence, Data Analytics and Statistical Learning, Operating Systems, Foundations of Computer Science, Systems Programming Concepts, Algorithms, Accelerated Object Oriented Programming, Machine Organization and Assembly Language
 
 %--------PROGRAMMING SKILLS------------
 \section{Professional Skills}
  \resumeSubHeadingListStart
     \item{
-     \textbf{Languages}{: Java, Python, C/C++, C\#, JavaScript, Typescript, HTML/CSS, Rust, YAML }
+     \textbf{Languages}{: Java, Python, C/C++, C\#, JS/TS, HTML/CSS, Rust }
      }
      \item{
-     \textbf{Software \& Tools}{: \LaTeX, Git, .NET, Node.js, Vue, React, .NET, AWS, Azure, Figma, Veracode, Jest}
+     \textbf{Software \& Tools}{: React, .NET, AWS, Azure, Jest, Playwright, Veracode, Renovate}
     }
     \item{
      \textbf{Other}{: Agile/Scrum}
