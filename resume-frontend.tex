@@ -1,0 +1,182 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\setlength{\footskip}{4.08003pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Custom commands
+\newcommand{\headlessResumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/david-larson-48179b15b/}{\Large David Larson}} & Email:  \href{mailto:larson.david46@gmail.com}{larson.david46@gmail.com}\\
+  \href{http://github.com/dalarson/}{github.com/dalarson} & Mobile : (301) 609-0012 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Worcester Polytechnic Institute}{Worcester, MA}
+      {Bachelor of Computer Science with Distinction;  GPA: 3.34}{May 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Microsoft}{Remote}
+      {Software Engineer}{Aug 2023 - present}
+      \resumeItemListStart
+      \headlessResumeItem
+        {Develop and maintain an admin portal for the Copilot suite of AI products, leveraging React.js, Zustand for state management, and Fluent UI for component design.}
+        \headlessResumeItem
+        {Work closely with UX designers to implement accessible and responsive UI components. Collaborate extensively with backend engineers to consume APIs effectively and help with design of REST endpoints.}
+      \headlessResumeItem
+        {Responsible for on-call support for the admin portal and backend, ensuring stability for over 1 million users and 10 million API calls per day worldwide.}
+      \headlessResumeItem
+        {Spearheaded the migration of engineers to begin working on Msft rewrite of Nuance admin portal and backend.}
+      \headlessResumeItem
+        {Assumed ownership of a full stack tool used for debugging production CIs after architect was let go due to reorganization. Carried out security-related upgrades and maintenance and geo-expansion to new region.}
+      \resumeItemListEnd  
+  
+    \resumeSubheading
+      {Nuance}{Burlington, MA (remote)}
+      {Software Engineer}{Jun 2020 - Aug 2023}
+      \resumeItemListStart
+        \headlessResumeItem
+          {Built and maintained admin portal for Nuance's AI-powered clinical documentation product. Implemented new features, fixed bugs, and improved performance of React/TypeScript front end used by clinicians.}
+        \headlessResumeItem
+          {Contributed to a configuration solution for integrating PowerBi reports into admin portal. Independently redesigned and implemented C\# replacement for legacy Node.js solution to improve performance and reliability.}
+        \headlessResumeItem
+          {Contributed to a cross-team component library tailored to the service stack and created interactive documentation in Storybook to facilitate developer usage.}
+        \headlessResumeItem
+          {Implemented CI/CD, automation, testing and vulnerability scanning pipelines for code base.}
+        \headlessResumeItem
+          {Contributed to development of comprehensive suite of functional tests using Playwright and unit tests using Jest for admin portal.}
+        \headlessResumeItem
+          {Established and maintained testing, build, dependency verification, and upgrade pipelines to streamline development workflows.}
+        \headlessResumeItem
+          {Played a vital role in the geo-expansion of the admin portal and its associated backend services to new regions, increasing accessibility for global users.}
+        \headlessResumeItem
+          {Implemented telemetry and logging for front end application meeting oTel standard to assist in debugging production issues and created various dashboards for quick reference of key metrics.}
+      \resumeItemListEnd
+      % \resumeSubheading
+      % {Nuance Communications}{Burlington, MA}
+      % {Software Engineering Intern}{May - Aug 2019}
+      % \resumeItemListStart
+      %   \headlessResumeItem
+      %     {Developed ASP.NET web application to interface with AWS EC2. Allows configuration and management of VMs running pre-configured SOAP UI tests for load testing on Azure servers via web GUI.}
+      % \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+  \resumeSubItem{Rusty Rhino}
+      {Implemented full stack application for a small furniture restoration business. Includes React.js front end with CMS using Mantine component library, CosmosDb, and Java/Spring Boot REST API.}
+  \resumeSubItem{Major Qualifying Project: GANs for Vehicle Trajectories}
+      {Using Generative Adversarial Networks (GANs) to analyze and predict traffic patterns. Training model with trajectory data to generate trajectory data on an overlaid grid, then attempting to enhance resolution of given data.}
+    % \resumeSubItem{Gateway Traffic Classifier}
+    %   {Created Linux VM to act as network gateway between an Android VM and internet. Implemented decision tree model to classify the source application of packet traces in real time.}
+    %   \resumeSubItem{Game of Life}
+    %   {Implemented Conway's game of life as an exercise to learn the Rust systems programming language. Used sparse matrix data structure for implementation.}
+    % \resumeSubItem{Distance Vector Routing Protocol}
+    %   {Implemented distance vector routing algorithm in C that maintains correct distance table with arbitrary node topology.}
+    % \resumeSubItem{Alternating Bit Protocol}
+    %   {Implemented version of Reliable Data Transfer in C. Simulated alternating bit protocol on transport layer.}
+  \resumeSubHeadingListEnd
+  
+%--------Relevant Coursework-----------
+% \section{Relevant Coursework}
+%   Tools and Technology for Network Security, Advanced Computer Networks, Distributed Computer Systems, Intro to Artificial Intelligence, Data Analytics and Statistical Learning, Operating Systems, Foundations of Computer Science, Systems Programming Concepts, Algorithms, Accelerated Object Oriented Programming, Machine Organization and Assembly Language
+
+%--------PROGRAMMING SKILLS------------
+\section{Professional Skills}
+ \resumeSubHeadingListStart
+    \item{
+     \textbf{Languages}{: Java, Python, C/C++, C\#, JavaScript/TypeScript, HTML/CSS, Rust }
+     }
+     \item{
+     \textbf{Software \& Tools}{: React, Vue.js, .NET, AWS, Azure, Jest, Vite, Create React App, Redux, Zustand, Playwright, Storybook, Docker, Kubernetes, Git }
+    }
+    \item{
+     \textbf{Other}{: Agile/Scrum}
+    }
+    \item{
+     \textbf{Certifications}{: AZ 900, AZ 204}
+    }
+ \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
